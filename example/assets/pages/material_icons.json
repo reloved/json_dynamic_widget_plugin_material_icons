@@ -1,0 +1,81 @@
+{
+  "type": "set_value",
+  "args": {
+    "template": {
+      "type": "material",
+      "args": {
+        "borderRadius": 8,
+        "color": "#333"
+      },
+      "child": {
+        "type": "padding",
+        "args": {
+          "padding": 16
+        },
+        "child": {
+          "type": "column",
+          "args": {
+            "crossAxisAlignment": "center",
+            "mainAxisAlignment": "center",
+            "mainAxisSize": "max"
+          },
+          "children": [
+            {
+              "type": "material_icon",
+              "args": {
+                "color": "#fff",
+                "icon": "!{{key}}",
+                "size": 40.0
+              }
+            },
+            {
+              "type": "sized_box",
+              "args": {
+                "height": 16.0
+              }
+            },
+            {
+              "type": "text",
+              "args": {
+                "text": "!{{key}}",
+                "style": {
+                  "color": "#fff"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "child": {
+    "type": "scaffold",
+    "args": {
+      "appBar": {
+        "type": "app_bar",
+        "args": {
+          "title": {
+            "type": "text",
+            "args": {
+              "text": "Material Icon"
+            }
+          }
+        }
+      },
+      "body": {
+        "type": "grid_view",
+        "args": {
+          "gridDelegate": {
+            "alignment": "center",
+            "crossAxisSpacing": 16.0,
+            "mainAxisSpacing": 16.0,
+            "maxCrossAxisExtent": 300,
+            "type": "max_cross_axis_extent"
+          },
+          "padding": 16.0
+        },
+        "children": "##for_each({{icons}}, template)##"
+      }
+    }
+  }
+}
