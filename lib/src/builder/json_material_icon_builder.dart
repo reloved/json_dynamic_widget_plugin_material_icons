@@ -42,14 +42,14 @@ class JsonMaterialIconBuilder extends JsonWidgetBuilder {
   ///  * [ThemeDecoder.decodeColor]
   ///  * [ThemeDecoder.decodeIconData]
   ///  * [ThemeDecoder.decodeTextDirection]
-  static JsonIconBuilder? fromDynamic(
+  static JsonMaterialIconBuilder? fromDynamic(
     dynamic map, {
     JsonWidgetRegistry? registry,
   }) {
-    JsonIconBuilder? result;
+    JsonMaterialIconBuilder? result;
 
     if (map != null) {
-      result = JsonIconBuilder(
+      result = JsonMaterialIconBuilder(
         color: ThemeDecoder.decodeColor(
           map['color'],
           validate: false,
