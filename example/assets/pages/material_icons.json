@@ -24,7 +24,7 @@
               "type": "material_icon",
               "args": {
                 "color": "#fff",
-                "icon": "!{{key}}",
+                "icon": "${key}",
                 "size": 40.0
               }
             },
@@ -37,7 +37,7 @@
             {
               "type": "text",
               "args": {
-                "text": "!{{key}}",
+                "text": "${key}",
                 "style": {
                   "color": "#fff"
                 }
@@ -74,7 +74,7 @@
           },
           "padding": 16.0
         },
-        "children": "##for_each({{icons}}, template)##"
+        "children": "${for_each(icons, 'template')}"
       }
     }
   }
