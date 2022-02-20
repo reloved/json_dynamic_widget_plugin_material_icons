@@ -1,3 +1,8 @@
+## [2.0.2] - February 20th, 2022
+
+* Dependency Updates
+
+
 ## [2.0.1] - February 6th, 2022
 
 * Dependency Updates
