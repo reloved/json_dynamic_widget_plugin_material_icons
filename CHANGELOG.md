@@ -1,3 +1,8 @@
+## [3.3.0] - September 2nd, 2022
+
+* Flutter 3.3.0
+* Version pinning to Flutter's version
+
 ## [3.0.0] - May 14th, 2022
 
 * Flutter 3.0
