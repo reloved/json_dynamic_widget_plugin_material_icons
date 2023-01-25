@@ -16,6 +16,4 @@ jobs:
           channel: 'stable'
 
       - name: Validate
-        uses: peiffer-innovations/actions-flutter-validate@v1.1.3
-        with:
-          flutter_package: true
+        uses: peiffer-innovations/actions-flutter-validate@v1
