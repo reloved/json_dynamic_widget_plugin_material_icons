@@ -17,7 +17,7 @@ class JsonMaterialIconBuilder extends JsonWidgetBuilder {
   }) : super(numSupportedChildren: kNumSupportedChildren);
 
   static const kNumSupportedChildren = 0;
-  static const type = 'material_icon';
+  static const kType = 'material_icon';
 
   final Color? color;
   final IconData? icon;

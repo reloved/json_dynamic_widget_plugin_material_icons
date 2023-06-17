@@ -11,7 +11,7 @@ class JsonMaterialIconsPlugin {
     );
 
     registry.registerCustomBuilder(
-      JsonMaterialIconBuilder.type,
+      JsonMaterialIconBuilder.kType,
       JsonWidgetBuilderContainer(
         builder: JsonMaterialIconBuilder.fromDynamic,
         schemaId: MaterialIconSchema.id,
