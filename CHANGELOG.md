@@ -1,3 +1,8 @@
+## [3.10.1+1] - June 20, 2023
+
+* Automated dependency updates
+
+
 ## [3.10.1] - June 17th, 2023
 
 * Dart 3.0
@@ -211,6 +216,7 @@
 ## [1.0.0+1] - December 1st, 2021
 
 * Initial release
+
 
 
 
