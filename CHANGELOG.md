@@ -1,3 +1,8 @@
+## [3.13.0] - August 20th, 2023
+
+* Flutter 3.13
+
+
 ## [3.10.1+8] - August 15, 2023
 
 * Automated dependency updates
