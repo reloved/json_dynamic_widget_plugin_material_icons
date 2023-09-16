@@ -11,8 +11,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  json_dynamic_widget: '^7.0.0+2'
   json_dynamic_widget_plugin_material_icons:
     path: ../
+  json_theme: '^6.2.6+1'
+  logging: '^1.2.0'
+  material_icons_named: '^3.13.0'
 
 dev_dependencies:
   flutter_test:

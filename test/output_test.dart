@@ -6,21 +6,22 @@ import 'package:json_dynamic_widget_plugin_material_icons/json_dynamic_widget_pl
 
 void main() {
   test('output', () async {
-    var output = Directory('output');
+    final output = Directory('output');
     if (output.existsSync()) {
       output.deleteSync(recursive: true);
     }
 
     output.createSync(recursive: true);
 
-    var encoder = JsonEncoder.withIndent('  ');
-    for (var schema in JsonDynamicWidgetPluginMaterialIconsSchemas.all.values) {
+    const encoder = JsonEncoder.withIndent('  ');
+    for (var schema
+        in JsonMaterialIconsPluginRegistrar.registerDefaults().schemas.values) {
       for (var i = 0; i < 3; i++) {
         try {
-          var id = schema['\$id'].toString();
-          var fileName = id.split('/').last;
+          final id = schema['\$id'].toString();
+          final fileName = id.split('/').last;
 
-          var file = File('${output.path}/$fileName');
+          final file = File('${output.path}/$fileName');
           file.createSync(recursive: true);
 
           file.writeAsStringSync(encoder.convert(schema));
@@ -33,7 +34,7 @@ void main() {
             rethrow;
           }
 
-          await Future.delayed(Duration(milliseconds: 100));
+          await Future.delayed(const Duration(milliseconds: 100));
         }
       }
     }
