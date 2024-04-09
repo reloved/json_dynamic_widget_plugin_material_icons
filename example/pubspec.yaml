@@ -1,7 +1,7 @@
 name: 'example'
 description: 'Example app for the JsonDynamicWidget library'
 publish_to: 'none'
-version: '1.0.0+13'
+version: '1.0.0+14'
 
 environment: 
   sdk: '>=3.0.0 <4.0.0'
@@ -9,10 +9,10 @@ environment:
 dependencies: 
   flutter: 
     sdk: 'flutter'
-  json_dynamic_widget: '^7.1.0+6'
+  json_dynamic_widget: '^7.1.0+7'
   json_dynamic_widget_plugin_material_icons: 
     path: '../'
-  json_theme: '^6.4.1+1'
+  json_theme: '^6.4.1+2'
   logging: '^1.2.0'
   material_icons_named: '^3.16.0'
 
