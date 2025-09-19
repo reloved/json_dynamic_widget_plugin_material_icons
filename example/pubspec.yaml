@@ -9,10 +9,16 @@ environment:
 dependencies:
   flutter:
     sdk: "flutter"
-  json_dynamic_widget: "^10.0.1"
+  json_dynamic_widget:
+    git:
+      url: "https://github.com/reloved/json_dynamic_widget.git"
+      path: "packages/json_dynamic_widget"
   json_dynamic_widget_plugin_material_icons:
     path: "../"
-  json_theme: "^9.0.1+2"
+  json_theme:
+    git:
+      url: "https://github.com/reloved/json_theme.git"
+      path: "packages/json_theme"
   logging: "^1.3.0"
   material_icons_named: "^3.16.0+2"
 
