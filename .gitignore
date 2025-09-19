@@ -14,7 +14,7 @@ coverage/
 coverage_badge.svg
 test/.test_coverage.dart
 output/
-*.g.dart
+# *.g.dart
 
 # IntelliJ related
 *.iml
